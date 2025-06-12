@@ -11,13 +11,13 @@
     <?php
     if(!isset($_SESSION["type"])){
         echo "<div align='center' class='top'>Hello</div>";
-        echo "<nav align='center' class='href'><a href='login.php'>login</a> | <a href='add.php'>add user</a> | <a href='about'>about</a></nav>";
-    }elseif($_SESSION["type"]=="a"){
-      echo "<div align='center' class='top'>Admin</div>";
-        echo "<nav align='center' class='href'><a href='logout.php'>logout</a> | <a href='about'>about</a></nav>";
+        echo "<nav align='center' class='href'><a href='login.php'>login</a> | <a href='add.php'>add user</a> | <a href='about.php'>about</a></nav>";
+    }elseif($_SESSION["type"]=="u"){
+      echo "<div align='center' class='top'>User</div>";
+        echo "<nav align='center' class='href'><a href='logout.php'>logout</a> | <a href='about.php'>about</a></nav>";
     }else{
       echo "<div align='center' class='top'>Admin</div>";
-        echo "<nav align='center' class='href'><a href='logout.php'>logout</a> | <a href='about'>about</a></nav>";    
+        echo "<nav align='center' class='href'><a href='fix.php'>fix user</a> | <a href='logout.php'>logout</a> | <a href='about.php'>about</a></nav>";    
     }
     ?>
     
