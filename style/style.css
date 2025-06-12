@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+.top {
+
+    background-color: lightblue;
+    font-size: 40px;
+}
+.main {
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.href{
+    background-color: orange;
+    
+}
+.href a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.href a:hover{
+    background-color: lightskyblue;
+    color: purple;
+}
