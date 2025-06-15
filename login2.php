@@ -13,6 +13,7 @@ if(mysqli_num_rows($res)>0){
             $_SESSION["acc"]=$row["account"];
             $_SESSION["name"]=$row["name"];
             $_SESSION["type"]=$row["type"];
+            $_SESSION["img"]=$row["img"];
             if($row['type']=="a"){
                 header("location:index.php");
             }else{

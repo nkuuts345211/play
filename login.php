@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>登入</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <div align="center" class="top">Login</div>
-    <nav align="center" class="href"><a href="index.php">index</a> | <a href="add.php">adduser</a> | <a href="about.php">about</a></nav>
+    <div align="center" class="top">登入</div>
+    <nav align="center" class="href"><a href="index.php">首頁</a> | <a href="add.php">註冊</a> | <a href="about.php">關於</a></nav>
     <div class="main" align="center">
     <form action="login2.php" method="get">
         帳號<input type="text" name="acc" required autocomplete="off"><br>

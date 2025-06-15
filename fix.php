@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix user</title>
+    <title>編輯權限</title>
     <link rel="stylesheet" href="/style/style.css">
     <style>
         table td{
@@ -20,11 +20,11 @@
 <body>
     <?php
     include "db.php";
-    echo "<div align='center' class='top'>Admin</div>";
-    echo "<nav align='center' class='href'><a href='index.php'>index</a> | <a href='logout.php'>logout</a> | <a href='about.php'>about</a></nav>";    
+    echo "<div align='center' class='top'>編輯權限</div>";
+    echo "<nav align='center' class='href'><a href='index.php'>首頁</a> | <a href='logout.php'>登出</a> | <a href='about.php'>關於</a></nav>";    
     echo "<form action='fix2.php' method='get'>";
     echo "<table align='center'>";
-    echo "<tr><td>name</td><td>account</td><td>type</td><td>fix</td></tr>";
+    echo "<tr><td>名字</td><td>帳號</td><td>權限</td><td>編輯</td></tr>";
     $sql="SELECT * FROM `user` WHERE 1";
     $res=mysqli_query($link,$sql);
     if(mysqli_num_rows($res)>0){
